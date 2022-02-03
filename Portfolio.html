@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Documentation - Documentation Bulma Theme</title>
+    <!-- <title>Documentation - Documentation Bulma Theme</title> -->
     <!-- Bulma Version 0.9.0-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css" />
     <link rel="stylesheet" type="text/css" href="../css/documentation.css" />
@@ -139,6 +139,21 @@
         .footer .links a {
             margin: 0 1rem;
         }
+
+        #tank {
+            object-fit: cover;
+        }
+
+        #moneyLogo {
+            object-fit: scale-down;
+        }
+
+        #goldenEye {
+            object-fit: cover;
+            width: 65%;
+            margin-left: 10%;
+            border-radius: 50%;
+        }
     </style>
 </head>
 
@@ -190,58 +205,59 @@
                         <h2 class="subtitle">Portfolio Pieces</h2>
                     </div>
                 </div>
-                <div class="level-right">
-                    <div class="level-item">
-                        <div class="field has-addons has-addons-centered">
-                            <div class="control">
-                                <a class="button is-small" disabled>
-                                    <i class="far fa-chevron-left"></i>
-                                </a>
-                            </div>
-                            <div class="control">
-                                <a class="button is-small">
-                                    <i class="far fa-chevron-right"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
             <div class="columns">
                 <div class="column is-3">
                     <article>
                         <figure class="image is-5by3">
-                            <img src="https://i.ibb.co/fq8hSGQ/placeholder-image-368x246.png" />
+                            <img id="securityCamera" src="securityCamera.gif" />
+
                         </figure>
-                        <h2 class="subtitle">Oversight</h2>
-                        <p>Testing Description</p>
+                        <h1 class="subtitle">Oversight</h1><a href="https://rolandyambao.github.io/Oversight/">Link to
+                            the Deployed GitHub</a>
+                        <p>Oversight is a simple web based game where the player is a watchtower seeking to stop a
+                            troublemaker without making too much mistakes.</p>
+                        <br />
+                        <p>Utilizes - HTML, CSS, JavaScript</p>
                     </article>
                 </div>
                 <div class="column is-3">
                     <article>
                         <figure class="image is-5by3">
-                            <img src="https://i.ibb.co/fq8hSGQ/placeholder-image-368x246.png" />
+                            <img id="tank" src="Tank.jpg" />
                         </figure>
-                        <h2 class="subtitle">Subjugate</h2>
-                        <p>Testing Description</p>
+                        <h1 class="subtitle">Subjugate</h1> <a href="https://subjugate.herokuapp.com/">Link to the
+                            Heroku App</a>
+                        <p>Subjugate is a website detailing a fictional video game studio's latest real-time strategy
+                            game's factions, units, and more</p>
+                        <br />
+                        <p>Utilizes - HTML, CSS, JavaScript, PostgreSQL, Authentication </p>
                     </article>
                 </div>
                 <div class="column is-3">
                     <article>
                         <figure class="image is-5by3">
-                            <img src="https://i.ibb.co/fq8hSGQ/placeholder-image-368x246.png" />
+                            <img id="moneyLogo" src="Money Logo.png" />
                         </figure>
-                        <h2 class="subtitle">Mercer</h2>
-                        <p>Testing Description</p>
+                        <h2 class="subtitle">Mercer</h2> <a href="https://mercers-app.herokuapp.com/">Link to the
+                            Heroku App</a>
+                        <p>Working with a team, we created the online yard sale creation app, Mercer.
+                            Users are able to create their own sales and items to share with others.</p>
+                        <br />
+                        <p>Utilizes - HTML, CSS, JavaScript, React, Authentication </p>
                     </article>
                 </div>
                 <div class="column is-3">
                     <article>
                         <figure class="image is-5by3">
-                            <img src="https://i.ibb.co/fq8hSGQ/placeholder-image-368x246.png" />
+                            <img id="goldenEye" src="Golden Eye.jpg" />
                         </figure>
-                        <h2 class="subtitle">Muses Center</h2>
-                        <p>Testing Description</p>
+                        <h2 class="subtitle">Muses Center</h2> <a href="http://muses-center.herokuapp.com/">Link to the
+                            Heroku App</a>
+                        <p>The Muses Center is an online museum showcasing an art gallery and a place where artists can
+                            place their art portfolio.</p>
+                        <br />
+                        <p>Utilizes - HTML, CSS, JavaScript, React, Authentication </p>
                     </article>
                 </div>
             </div>
