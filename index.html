@@ -306,6 +306,8 @@
                         </figure>
                         <h1 class="subtitle">Subjugate</h1> <a href="https://subjugate.herokuapp.com/">Link to the
                             Heroku App</a>
+                        <p>NOTE: Heroku Apps Load Slowly; you must Create an Account to Sign In for this App</p>
+                        <br />
                         <p>Subjugate is a website detailing a fictional video game studio's latest real-time strategy
                             game's factions, units, and more</p>
                         <br />
@@ -319,6 +321,8 @@
                         </figure>
                         <h2 class="subtitle">Mercer</h2> <a href="https://mercers-app.herokuapp.com/">Link to the
                             Heroku App</a>
+                        <p>NOTE: Heroku Apps Load Slowly; you must Create an Account to Sign In for this App</p>
+                        <br />
                         <p>Working with a team, we created the online yard sale creation app, Mercer.
                             Users are able to create their own sales and items to share with others.</p>
                         <br />
@@ -332,6 +336,8 @@
                         </figure>
                         <h2 class="subtitle">Muses Center</h2> <a href="http://muses-center.herokuapp.com/">Link to the
                             Heroku App</a>
+                        <p>NOTE: Heroku Apps Load Slowly; you must Create an Account to Sign In for this App</p>
+                        <br />
                         <p>The Muses Center is an online museum showcasing an art gallery and a place where artists can
                             place their art portfolio.</p>
                         <br />
@@ -341,6 +347,22 @@
             </div>
         </section>
     </div>
+    <script>
+        // Hamburger menu functionality
+        document.addEventListener('DOMContentLoaded', () => {
+            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+            if ($navbarBurgers.length > 0) {
+                $navbarBurgers.forEach(el => {
+                    el.addEventListener('click', () => {
+                        const target = el.dataset.target;
+                        const $target = document.getElementById(target);
+                        el.classList.toggle('is-active');
+                        $target.classList.toggle('is-active');
+                    });
+                });
+            }
+        });
+    </script>
 </body>
 
 </html>
